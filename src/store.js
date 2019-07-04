@@ -23,6 +23,12 @@ export default new Vuex.Store({
         ({ key }) => key !== activity.key
       );
     },
+    completeActivity(state, data) {
+      const activityIdx = state.activitiesList.findIndex(
+        ({ key }) => key === data.key
+      );
+      state.activitiesList.splice(activityIdx, 1, data);
+    },
     clearAll(state) {
       state.activitiesList = [];
     }

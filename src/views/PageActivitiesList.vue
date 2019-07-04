@@ -14,15 +14,17 @@
               <td>{{ item.activity }}</td>
               <td>{{ item.participants }}</td>
               <td>{{ item.price }}</td>
-              <td>
+              <td nowrap>
                 <v-btn
                   icon
-                  color="error"
+                  :disabled="item.completed"
                   small
-                  outline
-                  @click="deleteActivity(item)"
+                  @click="completeActivity({ ...item, completed: true })"
                 >
-                  <v-icon>fas fa-minus</v-icon>
+                  <v-icon color="green">fas fa-check</v-icon>
+                </v-btn>
+                <v-btn icon small @click="deleteActivity(item)">
+                  <v-icon color="error">fas fa-minus</v-icon>
                 </v-btn>
               </td>
             </template>
@@ -58,7 +60,7 @@ export default {
     ...mapState(["activitiesList"])
   },
   methods: {
-    ...mapMutations(["removeFromList", "clearAll"]),
+    ...mapMutations(["removeFromList", "clearAll", "completeActivity"]),
     deleteActivity(activity) {
       this.removeFromList(activity);
     }
