@@ -891,15 +891,16 @@
     webpack "^4.0.0"
 
 "@vue/cli-plugin-eslint@^3.8.0":
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-eslint/-/cli-plugin-eslint-3.8.0.tgz#0402dfd3864b0224bceb264df89a4209000bb98c"
-  integrity sha512-18LDJmjH0DDw9T4+RbrSVk4xkF8t8RDRsEPJLPurno1YVJodIkQ6lqVu82faVgtvPyCoqiaicoTq/iwi1avoLQ==
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-eslint/-/cli-plugin-eslint-3.12.1.tgz#302c463867f38e790bb996eafdf7159c782dc8cf"
+  integrity sha512-tVTZlEZsy3sQbO4LLWFK11yzlWwqVAqaM+IY+BeWHITBzEJKh2KmouG+x6x/reXiU3qROsMJ4Ej3Hs8buSMWyQ==
   dependencies:
-    "@vue/cli-shared-utils" "^3.8.0"
+    "@vue/cli-shared-utils" "^3.12.1"
     babel-eslint "^10.0.1"
     eslint-loader "^2.1.2"
     globby "^9.2.0"
-    webpack ">=4 < 4.29"
+    webpack "^4.0.0"
+    yorkie "^2.0.0"
   optionalDependencies:
     eslint "^4.19.1"
     eslint-plugin-vue "^4.7.1"
