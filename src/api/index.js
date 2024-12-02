@@ -2,7 +2,7 @@ import axios from "axios";
 import qs from "qs";
 
 const instance = axios.create({
-  baseURL: "https://www.boredapi.com/api",
+  baseURL: "https://bored.api.lewagon.com/api/",
   paramsSerializer: function(params) {
     return qs.stringify(params, { strictNullHandling: true });
   }
