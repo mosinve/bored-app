@@ -7,6 +7,6 @@ version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
-    lockfile-only: "lockfile-only"
+    lockfile-only: lockfile-only
     schedule:
       interval: "weekly"
